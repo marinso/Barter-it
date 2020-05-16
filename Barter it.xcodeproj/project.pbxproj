@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,19 @@
 		83153E4E2469D9EE00D365F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83153E4C2469D9EE00D365F6 /* LaunchScreen.storyboard */; };
 		83153E5C2469DD4400D365F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83153E5B2469DD4400D365F6 /* LoginViewController.swift */; };
 		83597EBB24702BEC00BA1EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83597EBA24702BEC00BA1EE3 /* Main.storyboard */; };
+		83597EBE24703F2600BA1EE3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EBD24703F2600BA1EE3 /* Item.swift */; };
+		83597EC324707F5100BA1EE3 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC224707F5100BA1EE3 /* APIRouter.swift */; };
+		83597EC52470858600BA1EE3 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC42470858600BA1EE3 /* APIBase.swift */; };
+		83597EC724708CCC00BA1EE3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC624708CCC00BA1EE3 /* APIClient.swift */; };
+		83597ECA2470940200BA1EE3 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC92470940200BA1EE3 /* DateFormatterExtensions.swift */; };
 		83C4264B2470193C005CDE03 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4264A2470193C005CDE03 /* DashboardViewController.swift */; };
+		9B1411B6D0436500C1859CD6 /* Pods_Barter_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BF7FDC33832B2C40D2FE52 /* Pods_Barter_it.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08A9F57DBA1439427DD219A7 /* Pods-Barter it.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter it.debug.xcconfig"; path = "Target Support Files/Pods-Barter it/Pods-Barter it.debug.xcconfig"; sourceTree = "<group>"; };
+		42BF7FDC33832B2C40D2FE52 /* Pods_Barter_it.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Barter_it.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0703C127BA83F5C194D55A /* Pods-Barter it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barter it.release.xcconfig"; path = "Target Support Files/Pods-Barter it/Pods-Barter it.release.xcconfig"; sourceTree = "<group>"; };
 		83153E3E2469D9E900D365F6 /* Barter it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barter it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83153E412469D9E900D365F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83153E432469D9E900D365F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +36,11 @@
 		83153E4F2469D9EE00D365F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83153E5B2469DD4400D365F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83597EBA24702BEC00BA1EE3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		83597EBD24703F2600BA1EE3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		83597EC224707F5100BA1EE3 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		83597EC42470858600BA1EE3 /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
+		83597EC624708CCC00BA1EE3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		83597EC92470940200BA1EE3 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		83C4264A2470193C005CDE03 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1411B6D0436500C1859CD6 /* Pods_Barter_it.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80681660261D880A9B673F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08A9F57DBA1439427DD219A7 /* Pods-Barter it.debug.xcconfig */,
+				7C0703C127BA83F5C194D55A /* Pods-Barter it.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		83153E352469D9E900D365F6 = {
 			isa = PBXGroup;
 			children = (
 				83153E402469D9E900D365F6 /* Barter it */,
 				83153E3F2469D9E900D365F6 /* Products */,
+				80681660261D880A9B673F63 /* Pods */,
+				8C75C8C44F5A7AA0EC55E850 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +90,8 @@
 				83153E4F2469D9EE00D365F6 /* Info.plist */,
 				83153E562469DC6400D365F6 /* Application */,
 				83C4264924701918005CDE03 /* Dashboard */,
-				83153E552469DC3200D365F6 /* Login */,
 				83153E4A2469D9EE00D365F6 /* Assets.xcassets */,
+				83153E552469DC3200D365F6 /* Login */,
 				83153E4C2469D9EE00D365F6 /* LaunchScreen.storyboard */,
 			);
 			path = "Barter it";
@@ -121,6 +147,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		83597EBC24703EDC00BA1EE3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				83597EC42470858600BA1EE3 /* APIBase.swift */,
+				83597EC224707F5100BA1EE3 /* APIRouter.swift */,
+				83597EC624708CCC00BA1EE3 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		83597EC8247093E100BA1EE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83597EC92470940200BA1EE3 /* DateFormatterExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		83C4264924701918005CDE03 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +186,7 @@
 		83C4264D2470194D005CDE03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83597EBD24703F2600BA1EE3 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,8 +202,18 @@
 		83E9DE59246C854D00525518 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				83597EC8247093E100BA1EE3 /* Extensions */,
+				83597EBC24703EDC00BA1EE3 /* Networking */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		8C75C8C44F5A7AA0EC55E850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42BF7FDC33832B2C40D2FE52 /* Pods_Barter_it.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83153E522469D9EE00D365F6 /* Build configuration list for PBXNativeTarget "Barter it" */;
 			buildPhases = (
+				727935FD5F0664DB2BFE99DC /* [CP] Check Pods Manifest.lock */,
 				83153E3A2469D9E900D365F6 /* Sources */,
 				83153E3B2469D9E900D365F6 /* Frameworks */,
 				83153E3C2469D9E900D365F6 /* Resources */,
+				9F06C79BDC8FE0C40CF9F166 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,13 +285,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		727935FD5F0664DB2BFE99DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Barter it-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F06C79BDC8FE0C40CF9F166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter it/Pods-Barter it-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Barter it/Pods-Barter it-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Barter it/Pods-Barter it-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83153E3A2469D9E900D365F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83597EBE24703F2600BA1EE3 /* Item.swift in Sources */,
+				83597ECA2470940200BA1EE3 /* DateFormatterExtensions.swift in Sources */,
+				83597EC324707F5100BA1EE3 /* APIRouter.swift in Sources */,
 				83153E5C2469DD4400D365F6 /* LoginViewController.swift in Sources */,
+				83597EC724708CCC00BA1EE3 /* APIClient.swift in Sources */,
 				83153E422469D9E900D365F6 /* AppDelegate.swift in Sources */,
+				83597EC52470858600BA1EE3 /* APIBase.swift in Sources */,
 				83153E442469D9E900D365F6 /* SceneDelegate.swift in Sources */,
 				83C4264B2470193C005CDE03 /* DashboardViewController.swift in Sources */,
 			);
@@ -378,6 +482,7 @@
 		};
 		83153E532469D9EE00D365F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A9F57DBA1439427DD219A7 /* Pods-Barter it.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +501,7 @@
 		};
 		83153E542469D9EE00D365F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0703C127BA83F5C194D55A /* Pods-Barter it.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
