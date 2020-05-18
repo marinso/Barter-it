@@ -13,12 +13,15 @@
 		83153E4B2469D9EE00D365F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83153E4A2469D9EE00D365F6 /* Assets.xcassets */; };
 		83153E4E2469D9EE00D365F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83153E4C2469D9EE00D365F6 /* LaunchScreen.storyboard */; };
 		83153E5C2469DD4400D365F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83153E5B2469DD4400D365F6 /* LoginViewController.swift */; };
+		834EF20C2473066500CDD3D4 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EF20B2473066500CDD3D4 /* ItemCollectionViewCell.swift */; };
 		83597EBB24702BEC00BA1EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83597EBA24702BEC00BA1EE3 /* Main.storyboard */; };
 		83597EBE24703F2600BA1EE3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EBD24703F2600BA1EE3 /* Item.swift */; };
 		83597EC324707F5100BA1EE3 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC224707F5100BA1EE3 /* APIRouter.swift */; };
 		83597EC52470858600BA1EE3 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC42470858600BA1EE3 /* APIBase.swift */; };
 		83597EC724708CCC00BA1EE3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC624708CCC00BA1EE3 /* APIClient.swift */; };
 		83597ECA2470940200BA1EE3 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83597EC92470940200BA1EE3 /* DateFormatterExtensions.swift */; };
+		836670A7247158DF0016C81C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836670A6247158DF0016C81C /* User.swift */; };
+		836670A9247174A90016C81C /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836670A8247174A90016C81C /* RequestInterceptor.swift */; };
 		83C4264B2470193C005CDE03 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4264A2470193C005CDE03 /* DashboardViewController.swift */; };
 		9B1411B6D0436500C1859CD6 /* Pods_Barter_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BF7FDC33832B2C40D2FE52 /* Pods_Barter_it.framework */; };
 /* End PBXBuildFile section */
@@ -35,12 +38,15 @@
 		83153E4D2469D9EE00D365F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83153E4F2469D9EE00D365F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83153E5B2469DD4400D365F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		834EF20B2473066500CDD3D4 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		83597EBA24702BEC00BA1EE3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		83597EBD24703F2600BA1EE3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		83597EC224707F5100BA1EE3 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		83597EC42470858600BA1EE3 /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
 		83597EC624708CCC00BA1EE3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		83597EC92470940200BA1EE3 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		836670A6247158DF0016C81C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		836670A8247174A90016C81C /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
 		83C4264A2470193C005CDE03 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				83153E5A2469DCBF00D365F6 /* Controller */,
-				83153E592469DC9F00D365F6 /* ViewController */,
 				83153E582469DC9000D365F6 /* View */,
 				83153E572469DC8900D365F6 /* Model */,
 			);
@@ -120,6 +125,7 @@
 		83153E572469DC8900D365F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				836670A6247158DF0016C81C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,17 +138,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		83153E592469DC9F00D365F6 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				83153E5B2469DD4400D365F6 /* LoginViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		83153E5A2469DCBF00D365F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				83153E5B2469DD4400D365F6 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +152,7 @@
 				83597EC42470858600BA1EE3 /* APIBase.swift */,
 				83597EC224707F5100BA1EE3 /* APIRouter.swift */,
 				83597EC624708CCC00BA1EE3 /* APIClient.swift */,
+				836670A8247174A90016C81C /* RequestInterceptor.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -195,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				83597EBA24702BEC00BA1EE3 /* Main.storyboard */,
+				834EF20B2473066500CDD3D4 /* ItemCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836670A9247174A90016C81C /* RequestInterceptor.swift in Sources */,
 				83597EBE24703F2600BA1EE3 /* Item.swift in Sources */,
 				83597ECA2470940200BA1EE3 /* DateFormatterExtensions.swift in Sources */,
 				83597EC324707F5100BA1EE3 /* APIRouter.swift in Sources */,
@@ -340,6 +342,8 @@
 				83153E422469D9E900D365F6 /* AppDelegate.swift in Sources */,
 				83597EC52470858600BA1EE3 /* APIBase.swift in Sources */,
 				83153E442469D9E900D365F6 /* SceneDelegate.swift in Sources */,
+				834EF20C2473066500CDD3D4 /* ItemCollectionViewCell.swift in Sources */,
+				836670A7247158DF0016C81C /* User.swift in Sources */,
 				83C4264B2470193C005CDE03 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
